@@ -1,7 +1,7 @@
 const { client } = require('nightwatch-cucumber');
 const { defineSupportCode } = require('cucumber');
 
-const devServer = 'http://localhost:8080';
+const devServer = 'http://localhost:3002';
 
 defineSupportCode(({ Given, Then, When }) => { // eslint-disable-line
 

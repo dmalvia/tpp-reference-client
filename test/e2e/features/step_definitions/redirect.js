@@ -3,7 +3,7 @@ const { defineSupportCode } = require('cucumber');
 
 
 defineSupportCode(({ Given, Then, When }) => { // eslint-disable-line
-  const devServer = 'http://localhost:8080';
+  const devServer = 'http://localhost:3002';
   const redirectPath = `${devServer}/redirect`;
 
   When('I visit the redirect page', () => client.url(redirectPath));

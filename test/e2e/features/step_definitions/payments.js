@@ -2,7 +2,7 @@ const { client } = require('nightwatch-cucumber');
 const { defineSupportCode } = require('cucumber');
 
 defineSupportCode(({ Given, Then, When }) => { // eslint-disable-line
-  const devServer = 'http://localhost:8080';
+  const devServer = 'http://localhost:3002';
   const paymentCompletedPath = `${devServer}/payment-submitted`;
 
   Given('I visit the payment submitted path', () => client
