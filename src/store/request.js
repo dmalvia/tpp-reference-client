@@ -1,7 +1,7 @@
 /* global fetch */
 import 'whatwg-fetch';
 
-export const baseUri = (process.env.API_BASE_URL || 'http://localhost:8003/open-banking/v1.1');
+export const baseUri = (process.env.API_BASE_URL || 'http://ec2-35-154-27-57.ap-south-1.compute.amazonaws.com:8003/open-banking/v1.1');
 export const rootUri = `${baseUri.split('/open-banking')[0]}`;
 export const tppAuthCodeUri = `${rootUri}/tpp/authorized`;
 export const accountRequestConsentUri = `${rootUri}/account-request-authorise-consent`;
